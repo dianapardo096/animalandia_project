@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+:root{
+	--dark-color:#191919;
+	--white-color:#FFFFFF;
+	--purple-color:rgb(117,41,149);
+	--blue-color:#00B2B1;
+	--gray-color:#828282;
+	--ligh-color:#F3F3F3;
+}
+h1,h2,h3{
+    font-family: 'Lato', sans-serif;
+    color: var(--purple-color);
+}
+
+p {
+    color: var(--dark-color);
+    text-align: justify;
+}
+
+/* estilos del home*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    max-width: 270px;
+    width: 100%;
+}
+
+.b-azul{
+    background-color: var(--blue-color);
+    border-radius: 5px;
+    border-color: var(--blue-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.b-azul:hover{
+    color: var(--blue-color);
+    background-color: var(--white-color);
+
+}
+
+.b-morado{
+    background-color: var(--white-color);
+    border-radius: 5px;
+    border-color: var(--purple-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--purple-color);
+}
+.b-morado:hover{
+    background-color: var(--purple-color);
+    color: var(--white-color);
+
+}
+
+nav{
+    display:flex;
+    background-color: var(--purple-color);
+
+}
+.item {
+    padding: 1rem;
+    color: var(--white-color);
+    text-decoration: none;
+    border-bottom: 2px solid var(--purple-color);
+}
+
+.item:hover{
+    border-bottom: 3px solid var(--gray-color);
+    transform: scale(1.1);
+}
+ 
+#agenda{
+    display: flex;
+    margin-top: 5px;
+}
+
+.cita{
+    flex-basis: 70%;
+    background-image:url('../img/fondo.jpg');
+    padding: 2rem;
+}
+.cita h1{
+    color: var(--dark-color);
+    font-size: 24px;
+    text-transform: uppercase; /* para dejar en mayusculas*/
+}
+.cita h3{
+    color: var(--dark-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 650;
+}
+
+.promocion{
+    flex-basis: 30%;
+    background-color: var(--purple-color);
+    text-align: center;
+    padding: 2rem;
+}
+.promocion h1{
+    color:var(--white-color);
+    font-size: 28px;
+    text-shadow: 2px 2px 2px var(--dark-color);
+}
+
+.promocion img{
+    border-radius: 50%;
+    border: 7px solid var(--white-color);
+}
+
+.tseccion{
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px var(--dark-color);
+    font-size: 32px;
+}
+
+#servicios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicio{
+    margin: 10px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.servicio img{
+    max-width: 200px;
+    width: 100%;
+}
+/* equipo*/
+
+#banner{
+    display: flex;
+}
+
+.bannerequipo img{
+    width: 100%;
+    
+}
+
+#equipo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxequipo {
+    margin: 8px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.boxequipo img{
+    max-width: 190px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.boxequipo h3{
+    color:rgb(117, 41, 149);
+    margin: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(202, 202, 202);
+}
+
+.boxequipo h4{
+    margin: 10px;
+    text-shadow: 2px 2px 2px rgb(202, 202, 202);
+}
+
+.boxequipo p{
+    margin: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(202, 202, 202);
+}
+
+/* contacto*/
+
+.mapa{
+    max-width: 90%;
+    width: 100%;
+    margin: 4rem;
+    text-align: center;
+}
+
+/* servicios*/
+
+#servicios {
+display: flex;
+flex-wrap: wrap; 
+justify-content: center;
+}
+    
+
+.service {
+    display: flex;
+    width: 45%;
+    margin-right: 1rem;
+}
+
+.img-service img {
+    margin-right: 1em;
+    max-width: 200px;
+}
+
+.text-service h3 {
+    color: var(--dark-color);
+}
+
+.bannerserv img{
+    width:100%;
+}
+
+/* tips*/
+
+#tips{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    
+}
+
+.tip{
+    margin: 2rem;
+    padding-top: 3rem;
+    flex-basis: 40%;
+}
+
+.tip img{
+    max-width: 100%;
+    width: 80%;
+}
+
+.tip img:hover{
+    transform: scale(1.2);
+}
+
+
+
+/*footer*/
+
+footer{
+    background-image: url('../img/fondo.jpg');
+}
+
+.box-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgba(117, 41,149,0.4);
+    color: var(--white-color);
+}
+
+.foot{
+    text-align: center;
+}
+
+.foot h3, .foot p {
+    color: var(--white-color);
+}
+
+
